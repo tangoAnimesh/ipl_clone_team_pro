@@ -1,0 +1,62 @@
+/*----------- Routing Nav Bar --------------- */
+a,li{
+    all: unset;
+}
+.router__nav{
+    background-color: #19398A !important;
+}
+
+
+.ipl__logo{
+    width: 100px;
+    margin-left: 2rem;
+}
+
+.fan__pool,
+.search__icon{
+    margin-right: 4rem;
+}
+
+button{
+    color: #fff !important;
+}
+
+i{
+    color: #fff !important;
+}
+
+.route__data{
+    color: #fff !important;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0 .5rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.route__data:hover{
+    box-shadow: 0px 2px #fff,
+                0px 2px #fff;
+}
+
+.mid__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.custom{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.router__nav__form{
+    display: block;
+}
+
+

@@ -1,0 +1,194 @@
+.container {
+  padding: 2rem;
+}
+
+.custom__h2 {
+  transform: skew(-10deg);
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+
+
+
+/* ===================================== BUTON ===================================== */
+.button-89 {
+  --b: 3px;
+  /* border thickness */
+  --s: .45em;
+  /* size of the corner */
+  --color: #000;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: #000; 
+   --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  transform: skew(-15deg);
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: #000;
+  outline-offset: .05em;
+  background-color: #e83121;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+/* ===================================== BUTON ===================================== */
+
+
+.text {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+
+/* ============================== CARDS ================================= */
+.container__custom{
+  width: 93%;
+  margin: auto;
+}
+.card{
+  width: 20.5rem; 
+  background: transparent;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover{
+  border:1px solid #000;
+  box-shadow: 9px 9px #000,
+              9px 9px #000;
+  transform: translate(-6px , -6px);
+  cursor: pointer;
+}
+
+
+.image{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.rank{
+  font-size: 5rem;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 4px 4px #7c7a7a,
+               4px 4px #7c7a7a ;
+}
+.heading{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 500;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40px;
+  padding-left: 1rem;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+
+.numbers{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+}
+
+.text__points{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: .7;
+}
+
+.points_and_text{
+  width: 99%;
+  margin: auto;
+}
+
+.custom__row{
+  display: flex ;
+  align-items: center;
+  justify-content: space-between ;
+}
+
+.result__container{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.win_loose_circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.win__loose_change{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.pnts-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pts-text{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+/* -------------- win loose  & Nrr color ------------- */
+.success{
+  border: 2px solid green;
+  color: green;
+}
+.failure{
+  border: 2px solid red;
+  color: red;
+}
+.nrr-success{
+  color: green;
+}
+.nrr-danger{
+  color: red;
+}

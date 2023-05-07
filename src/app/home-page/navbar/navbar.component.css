@@ -1,0 +1,53 @@
+a,li{
+    all: unset;
+}
+.nav{
+    background-color: #061E59 !important;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.4rem 0 ;
+}
+
+.bcci__text{
+    color: #fff;
+    transition: .3s;
+}
+.bcci__text:hover{
+    box-shadow: 0px 2px #fff;
+    cursor: pointer;
+}
+
+.icons__container{
+    color: #fff;
+}
+
+.follow_text{
+    font-weight: 700;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.icons{
+    background-color: #ccc;
+    padding: .2rem;
+    color: #061E59;
+    cursor: pointer;
+    opacity: 0.4;
+    border-radius: 50%;
+
+}
+
+i{
+    font-size: 1.2rem;
+    padding: .2rem;
+}
+
+
+.left__icons{
+    margin-left: 7rem !important;
+}
+.right__icons{
+    margin-right:7rem !important;
+
+}
+
+

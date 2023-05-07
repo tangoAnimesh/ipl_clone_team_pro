@@ -1,0 +1,57 @@
+<div class="navbar  sticky-top navbar-expand-lg navbar-light bg-light router__nav">
+
+  <a class="navbar-brand ipl__logo" href="#">
+    <img src="assets/nav__img/ipl_logo.png" class="ipl__logo" alt="">
+  </a>
+
+
+
+  <div class="collapse navbar-collapse text-center mid__content" id="navbarSupportedContent">
+    <div class="route__data"><a href="#">Matchs</a></div>
+    <div class="route__data"><a href="#">Videos</a></div>
+    <div class="route__data"><a href="#">Stats</a></div>
+    <div class="route__data"><a href="#">Points Table</a></div>
+    <div class="route__data"><a href="#">Teams</a></div>
+    <div class="route__data"><a href="#">News</a></div>
+    <div class="route__data"><a href="#">Fantasy</a></div>
+    <div class="route__data"><a href="#">MORE</a></div>
+
+  </div>
+
+
+
+  <a class="navbar-brand fan__pool"  href="#">
+    <img src="https://www.iplt20.com/assets/images/fan-poll.svg" class="ipl__logo" alt="">
+  </a>
+
+  <!--  Ekhane click hole tobe  " search__div " ta show korbe; 
+   nahole "search__div" bydefault show korbe na; -->
+
+  <div class="search__icon" (click)="toggle()" > 
+    <i class="fa-solid fa-magnifying-glass" #f></i>
+  </div> 
+
+  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="dark-blue-text">
+      <i class="fas fa-bars fa-1x"></i>
+    </span>
+  </button>
+   
+</div>
+
+
+  <div class="row router__nav search__div_hide p-3" *ngIf="display"  >
+    <div class="col-lg-4">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col-lg-4">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+    <div class="col-lg-4">
+      <button class="btn btn-danger">Submit</button>
+    </div>
+  </div>
+ 
+

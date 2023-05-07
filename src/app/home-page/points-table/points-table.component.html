@@ -1,0 +1,84 @@
+<div class="container">
+  <h2 class="text-center custom__h2">What are you looking for?</h2>
+  <div class="row  m-3">
+    <div class="col-lg-3">
+      <button class="button-89" role="button"><i class="fa-regular fa-calendar"></i>
+        <span class="text">Fixtures</span>
+      </button>
+    </div>
+    <div class="col-lg-3">
+      <button class="button-89" role="button"><i class="fa-sharp fa-solid fa-chart-simple"></i>
+        <span class="text">Points Table</span>
+      </button>
+    </div>
+    <div class="col-lg-3">
+      <button class="button-89" role="button"><i class="fa-solid fa-chart-column"></i>
+        <span class="text">Overall Stats</span>
+      </button>
+    </div>
+    <div class="col-lg-3">
+      <button class="button-89" role="button"><i class="fa-solid fa-users"></i>
+        <span class="text">All Team</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container__custom">
+  <h2 class=" custom__h2 my-4">Points Table</h2>
+
+  <div class="row custom__row ">
+
+    <ng-container *ngFor="let data of afterSorting; let i = index;">
+      <div class="card" >
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="rank">{{i+1}}</span><span class="heading">{{data.tm_name}}</span>
+          </h5>
+
+          <div class="image">
+            <img class="card-img-top" [src]="data.tm_img" alt="Card image cap">
+          </div>
+
+          <hr class="">
+
+          <div class="row points__table_data points_and_text ">
+            <div class="col-3 numbers">{{data.tm_points}}</div>
+            <div class="col-3 numbers">{{data.tm_played}}</div>
+            <div class="col-3 numbers">{{data.tm_won}}</div>
+            <div class="col-3 numbers nrr-success" >{{data.tm_nrr}}</div>
+          </div>
+          <div class="row text__table ">
+            <div class="col-3 text__points">Points</div>
+            <div class="col-3 text__points">Played</div>
+            <div class="col-3 text__points">Won</div>
+            <div class="col-3 text__points">NRR</div>
+          </div>
+
+          <div class="recent__form my-4">
+            <h4 class="recent__text">Recent form</h4>
+          </div>
+
+
+          <div class="result__container" >
+            <div class="win_loose_circle success">
+              <span class="win__loose_change">W</span>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </ng-container>
+
+  </div>
+
+</div>
+
+<div class="container-fluid my-4 pnts-btn">
+  <button class="button-89 pts-text">Full Points Table</button>
+</div>
+
